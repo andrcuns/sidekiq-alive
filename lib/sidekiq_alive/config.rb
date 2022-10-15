@@ -5,17 +5,17 @@ module SidekiqAlive
     include Singleton
 
     attr_accessor :host,
-      :port,
-      :path,
-      :liveness_key,
-      :time_to_live,
-      :callback,
-      :registered_instance_key,
-      :queue_prefix,
-      :server,
-      :custom_liveness_probe,
-      :logger,
-      :shutdown_callback
+                  :port,
+                  :path,
+                  :liveness_key,
+                  :time_to_live,
+                  :callback,
+                  :registered_instance_key,
+                  :queue_prefix,
+                  :server,
+                  :custom_liveness_probe,
+                  :logger,
+                  :shutdown_callback
 
     def initialize
       set_defaults

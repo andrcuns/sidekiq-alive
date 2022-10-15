@@ -86,8 +86,8 @@ module SidekiqAlive
 
     def store_alive_key
       redis.set(current_lifeness_key,
-        Time.now.to_i,
-        ex: config.time_to_live.to_i)
+                Time.now.to_i,
+                ex: config.time_to_live.to_i)
     end
 
     def redis

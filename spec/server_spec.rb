@@ -18,8 +18,8 @@ RSpec.describe(SidekiqAlive::Server) do
       expect(fake_webrick).to(receive(:run).with(
         described_class,
         hash_including(Logger: SidekiqAlive.logger,
-          Host: "0.0.0.0",
-          AccessLog: []),
+                       Host: "0.0.0.0",
+                       AccessLog: []),
       ))
 
       subject
