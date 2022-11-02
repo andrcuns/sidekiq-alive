@@ -3,6 +3,7 @@ PATH
   specs:
     sidekiq-alive-next (3.0.0)
       rack (>= 2.2.4, < 4)
+      rackup (~> 0.2.2)
       sidekiq (>= 7, < 8)
       webrick (>= 1, < 2)
 
@@ -41,6 +42,9 @@ GEM
     rack (3.0.0)
     rack-test (2.0.2)
       rack (>= 1.3)
+    rackup (0.2.2)
+      rack (>= 3.0.0.beta1)
+      webrick
     rainbow (3.1.1)
     rake (13.0.6)
     redis-client (0.10.0)
