@@ -52,4 +52,5 @@ Gem::Specification.new do |spec|
 
   spec.add_dependency("gserver", "~> 0.0.1")
   spec.add_dependency("sidekiq", ">= 5", "< 9")
+  spec.add_dependency("base64", "< 1")
 end
