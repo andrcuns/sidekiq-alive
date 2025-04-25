@@ -5,7 +5,7 @@
 ![Workflow status](https://github.com/allure-framework/allure-ruby/workflows/Test/badge.svg)
 [![Known Vulnerabilities](https://snyk.io/test/github/andrcuns/sidekiq-alive/badge.svg)](https://snyk.io/test/github/andrcuns/sidekiq-alive)
 
-**This is the fork of '[arturictus/sidekiq_alive](https://github.com/arturictus/sidekiq_alive)' with a few minor fixes and tweaks, all credit goes to author of original repo**
+**This is the fork of '[arturictus/sidekiq_alive](https://github.com/arturictus/sidekiq_alive)' with a few minor fixes and tweaks, original implementation credit goes to author of original repo**
 
 ---
 
