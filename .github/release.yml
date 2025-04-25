@@ -12,3 +12,6 @@ changelog:
     - title: '🧰 Maintenance'
       labels: 
         - 'maintenance'
+    - title: '📄 Documentation updates'
+      labels:
+        - 'documentation'
