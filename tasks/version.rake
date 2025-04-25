@@ -22,7 +22,7 @@ module SidekiqAlive
         new_version = send(args[:semver]).format("%M.%m.%p").to_s
 
         update_version(new_version)
-        commit_and_tag(new_version)
+        commit(new_version)
       end
     end
 
@@ -35,13 +35,14 @@ module SidekiqAlive
     def update_version(new_version)
       u_version = File.read(VERSION_FILE).gsub(SidekiqAlive::VERSION, new_version)
       File.write(VERSION_FILE, u_version)
+      sh("bundle install")
     end
 
     # Commit updated version file and Gemfile.lock
     #
     # @return [void]
-    def commit_and_tag(new_version)
-      sh("git add #{VERSION_FILE}")
+    def commit(new_version)
+      sh("git add #{VERSION_FILE} Gemfile.lock")
       sh("git commit -m 'Update version to #{new_version}'")
     end
 
