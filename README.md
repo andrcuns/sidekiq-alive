@@ -46,16 +46,20 @@ hostname: bar
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'sidekiq_alive'
+gem 'sidekiq-alive-next'
 ```
 
 And then execute:
 
-    $ bundle
+```console
+bundle
+```
 
 Or install it yourself as:
 
-    $ gem install sidekiq_alive
+```console
+gem install sidekiq-alive-next
+```
 
 ## Usage
 
@@ -63,11 +67,11 @@ SidekiqAlive will start when running `sidekiq` command.
 
 Run `Sidekiq`
 
-```
+```console
 bundle exec sidekiq
 ```
 
-```
+```console
 curl localhost:7433
 #=> Alive!
 ```
@@ -76,7 +80,7 @@ curl localhost:7433
 You can disabled by setting `ENV` variable `DISABLE_SIDEKIQ_ALIVE`
 example:
 
-```
+```console
 DISABLE_SIDEKIQ_ALIVE=true bundle exec sidekiq
 ```
 
@@ -139,8 +143,8 @@ kill -SIGTSTP $SIDEKIQ_PID
 
 Make it executable:
 
-```
-$ chmod +x kube/sidekiq_quiet
+```console
+chmod +x kube/sidekiq_quiet
 ```
 
 Execute it in your deployment preStop:
@@ -185,12 +189,12 @@ It's just up to you how you want to use it.
 
 An example in local would be:
 
-```
+```console
 bundle exec sidekiq
 # let it initialize ...
 ```
 
-```
+```console
 curl localhost:7433
 #=> Alive!
 ```
@@ -298,11 +302,9 @@ After checking out the repo, run `bin/setup` to install dependencies. Then, run 
 
 To install this gem onto your local machine, run `bundle exec rake install`.
 
-Here is an example [rails app](https://github.com/arturictus/sidekiq_alive_example)
-
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/arturictus/sidekiq_alive. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+Bug reports and pull requests are welcome on GitHub at <https://github.com/andrcuns/sidekiq-alive>. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
 ## License
 
