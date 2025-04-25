@@ -48,6 +48,8 @@ jobs:
           - 6379:6379
     steps:
       - uses: actions/checkout@v4
+      - name: Remove lockfile
+        run: rm -f Gemfile.lock
       - name: Set up Ruby ${{ matrix.ruby-version }} with Sidekiq ${{ matrix.sidekiq-version }}
         uses: ruby/setup-ruby@v1
         with:
