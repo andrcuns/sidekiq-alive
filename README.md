@@ -1,11 +1,11 @@
 # SidekiqAlive
 
 [![Gem Version](https://badge.fury.io/rb/sidekiq-alive-next.svg)](https://rubygems.org/gems/sidekiq-alive-next)
-[![Total Downloads](https://img.shields.io/gem/dt/sidekiq-alive-next?color=blue)](https://rubygems.org/gems/https://rubygems.org/gems/sidekiq-alive-next)
+[![Total Downloads](https://img.shields.io/gem/dt/sidekiq-alive-next?color=blue)](https://rubygems.org/gems/sidekiq-alive-next)
 ![Workflow status](https://github.com/allure-framework/allure-ruby/workflows/Test/badge.svg)
 [![Known Vulnerabilities](https://snyk.io/test/github/andrcuns/sidekiq-alive/badge.svg)](https://snyk.io/test/github/andrcuns/sidekiq-alive)
 
-**This is the fork of '[arturictus/sidekiq_alive](https://github.com/arturictus/sidekiq_alive)' with a few minor fixes and tweaks, original implementation credit goes to author of original repo**
+**This is the fork of '[arturictus/sidekiq_alive](https://github.com/arturictus/sidekiq_alive)' with a few minor fixes and tweaks, original implementation credit goes to author of source repository**
 
 ---
 
