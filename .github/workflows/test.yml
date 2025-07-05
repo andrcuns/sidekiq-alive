@@ -73,4 +73,4 @@ jobs:
           pycobertura-exception-failure: false
           diff: true
           diff-branch: master
-          coverage-reduction-failure: true
+          coverage-rate-reduction-failure: true
